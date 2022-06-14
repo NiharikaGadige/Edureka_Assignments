@@ -1,0 +1,69 @@
+import java.util.*; 
+class  Menu 
+{  
+public static void main(String args[]) 
+{ 
+
+ Maths J=new Maths();  
+ while(true) {
+ System.out.println(" \t\t\t menu driven"); 
+ System.out.println("\n\n 1.Addition\n2.Subtraction\n3.multiplication\n4.division\n5.modulus\n6.Exit"); 
+ Scanner Sc=new Scanner(System.in); 
+ System.out.println("Enter the option to be performed: "); 
+ int opt=Sc.nextInt(); 
+ switch(opt) 
+ { 
+       case 1: 
+ 	J.add();  	
+        break;  	
+       case 2: 
+ 	J.sub();  	
+        break;  	
+       case 3: 
+ 	J.mul();  	
+        break;  	
+       case 4:  	
+        J.div();  	
+        break;  	
+       case 5: 
+ 	J.mod();  	
+        break;  	
+       case 6:
+ 	 System.exit(0);
+ 	 break; 
+       default:
+        System.out.println("invalid choice");
+        break;
+   }  
+   } 
+ }
+} 
+class Maths
+{  
+ 	public int a=20,b=10; 
+ 	void add() 
+ 	{ 
+ 	int c=a+b; 
+ 	System.out.println("sum is"+c); 
+ 	} 
+ 	void sub() 
+ 	{ 
+ 	int c=a-b; 
+ 	System.out.println("subtraction is "+c); 
+ 	} 
+ 	void mul() 
+ 	{ 
+ 	int c=a*b; 
+ 	System.out.println("multiplication is "+c); 
+ 	} 
+ 	void div() 
+ 	{ 
+ 	int c=a/b; 
+ 	System.out.println("division is "+c) ; 
+ 	} 
+ 	void mod() 
+ 	{ 
+ 	int c=a%b; 
+ 	System.out.println("modulus is "+c); 
+ 	} 
+} 
